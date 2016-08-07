@@ -58,8 +58,56 @@
   				</li>
   			</ul>
   		</div>
-  		<div class="sort">
+  		<div class="filter">
   			<h1>Сливочное мороженое</h1>
+  			<form action="">
+  				<div class="sort">
+  					<h3>Сортировка:</h3>
+  					<select name="filter-sort">
+  						<option select value="по популярности">по популярности</option>
+  						<option value="сначала недорогие">сначала недорогие</option>
+  						<option value="сначала дорогие">сначала дорогие</option>
+  						<option value="по жирности">по жирности</option>
+  					</select>
+  				</div>
+					<div class="filter-range">
+						<!-- Добавится потом -->
+					</div>
+					<div class="fat">
+						<h3>Жирность:</h3>
+						<label>
+							<input type="radio">0%
+						</label>
+						<label>
+							<input checked type="radio">до 10%
+						</label>
+						<label>
+							<input type="radio">до 30%
+						</label>
+						<label>
+							<input type="radio">выше 30%
+						</label>
+					</div>
+					<div class="fillers">
+						<h3>Наполнители:</h3>
+						<label>
+							<input checked type="checkbox">шоколадные
+						</label>
+						<label>
+							<input checked type="checkbox">сахарные присыпки
+						</label>
+						<label>
+							<input type="checkbox">фрукты
+						</label>
+						<label>
+							<input type="checkbox">сиропы
+						</label>
+						<label>
+							<input type="checkbox">джемы
+						</label>
+					</div>
+					<button type="submit">Применить</button>
+  			</form>
 
 
 
