@@ -1,6 +1,8 @@
 body {
 	font-family: "Roboto";
 	width: 1200px;
+	margin: 0px;
+	padding: 0px;
 	background: url(../img/gllacy-index-1200.jpg) no-repeat;
 }
 
@@ -10,7 +12,7 @@ body {
 }
 
 header {
-	margin: 0px 13px;
+	margin: 8px 21px;
 
 	.header-logo {
 		float: left;
@@ -47,6 +49,7 @@ header {
 		float: right;
 		width: 267px;
 		margin: 24px;
+		margin-bottom: 0px;
 
 		.search {
 			display: inline;
@@ -79,10 +82,121 @@ header {
 			}
 		}
 	}
+
+	.contact .number {
+		margin-top: 42px;
+		margin-right: 21px;
+	}
+
+	.contact {
+		float: right;
+		
+		.time {
+			float: right;
+			margin-top: 19px;
+			margin-right: 22px;
+			span {
+				font-size: 14px;
+				line-height: 16px;
+				font-weight: bold;
+				color: #fff;
+			}
+		}
+
+		.number {
+			span {
+				font-size: 22px;
+				line-height: 24px;
+				font-weight: bold;
+				color: #fff;
+			}
+		}
+	}
+}
+
+main {
+	.banner {
+		margin-top: 530px;
+
+		.banner-left, .banner-right {
+			width: 560px;
+			height: 230px;
+
+			h2 {
+				margin: 0;
+				padding-top: 16px;
+				padding-left: 18px;
+				font-size: 35px;
+				line-height: 41px;
+				font-weight: bold;
+				color: #fff;
+			}
+
+			p {
+				margin: 0px;
+				font-size: 18px;
+				line-height: 22px;
+				font-weight: bold;
+				color: #fff;
+				padding-top: 15px;
+				padding-left: 20px;
+			}
+
+			.button-banner {
+				margin-top: 44px;
+				margin-left: 375px;
+			}
+
+			a {
+
+			}
+		}
+
+		.banner-left {
+			float: left;
+			background: url("../img/raspbe0rry-bg.png");
+		}
+
+		.banner-right {
+			float: right;
+      background: url("../img/chocola0te-bg.png");
+		}
+	}
 }
 
 .clearfix::after {
   content: "";
   display: table;
   clear: both;
+}
+
+.btn {
+  display: inline-block;
+  padding: 11px 19px;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  vertical-align: top;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 100px;
+  background: linear-gradient(to bottom,#f26843 0,#e74a35 100%);
+  box-shadow: 0 2px 2px rgba(172,16,0,.64);
+}
+
+.btn:hover {
+  background:    -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+  background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+  background:         linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.btn:active {
+  background:    -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
+  background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
+  background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 } 
+/*
+Сделать горячую команду для написания хар-к текста*/
