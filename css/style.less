@@ -1,7 +1,7 @@
 body {
 	font-family: 'Roboto', sans-serif;
 	width: 1200px;
-	margin: 0px;
+	margin: 0px auto;
 	padding: 0px;
 	background: #849d8f url(../img/gllacy-cata0log-1200.jpg) no-repeat;
 }
@@ -340,7 +340,15 @@ main {
 		float: right;
 		width: 560px;
 		margin-top: 41px;
-		padding-bottom: 37px;
+		background: #f8f7f4 url("../img/edging-pattern.png");
+		border-radius: 10px;
+
+		.news-letter-bg {
+			background: #f8f7f4;
+			margin: 6px;
+			padding: 13px 0;
+			border-radius: 4px;
+		}
 
 		p {
 			width: 518px;
@@ -359,15 +367,17 @@ main {
 	}
 
 	.map {
+		clear: both;
+
 		width: 1200px;
-		margin-top: 301px;
 		margin-left: -27px;
 		padding-bottom: 147px;
 		background: url("../img/map-bg.jpg");
+		margin-top: 40px;
+
 
 		.map-adress {
 			width: 250px;
-			margin-top: 363px; /*За что цепляется*/
 			margin-left: 871px;
 			background: #fdfefe;
 
@@ -400,13 +410,15 @@ footer {
 
 
 		.social-btn {
-			display: inline-block;
-			width: 37px;
-			height: 37px;
-			margin-right: 8px;
-			font-size: 0;
   		vertical-align: top;
   		text-decoration: none;
+  		border: 3px solid rgba(255,255,255,.5);
+			border-radius: 50%;
+			font-size: 0;
+			margin-right: 8px;
+			height: 32px;
+			width: 32px;
+  		display: inline-block;
 		}
 
 		.social-btn-tw {
@@ -447,7 +459,7 @@ footer {
 		.menu-left {
 			float: left;
 
-			li {
+			li:first-child {
 				list-style-image: url("../img/love-icon.png");
 			}
 		}
