@@ -1,7 +1,7 @@
 body {
 	font-family: 'Roboto', sans-serif;
 	width: 1200px;
-	margin: 0px auto;
+	margin: 0px;
 	padding: 0px;
 	background: #849d8f url(../img/gllacy-cata0log-1200.jpg) no-repeat;
 }
@@ -27,8 +27,8 @@ header {
 		width: 560px;
 
 		ul {
-			padding: 0px;
 			margin: 21px 29px;
+			padding: 0px;
 
 			li {
 				display: inline;
@@ -49,52 +49,74 @@ header {
 	.user-block {
 		float: right;
 		width: 267px;
-		margin: 24px;
 		margin-bottom: 0px;
+		margin-top: 22px;
+		font-size: 14px;
+		line-height: 16px;
+		font-weight: 500;
+
+		a {
+			text-decoration: none;
+		}
 
 		.search {
 			display: inline;
+
 			a {
+				display: block;
+				float: left;
+				padding: 8px 16px;
+				margin-top: -8px;		
 				background: #a1b5aa url("../img/search-icon.png") no-repeat center;
-				color: #a1b5aa;
-				width: 32px;
-				height: 32px;
-				border-radius: 50%;				
+    		background-color: rgba(255,255,255,.2);
+    		border-radius: 50%;	
+    		font-size: 0px;
 			}
 		}
 
 		.login {
-			display: inline;
+			float: left;
+			margin-left: 10px;
+
 			a {
-				background: url(../img/login-icon.png) 7px no-repeat #a1b5aa;
+				padding-top: 7px;
+				padding-bottom: 7px;
+				padding-left: 45px;
+				padding-right: 16px;
+				background: #a1b5aa url(../img/login-icon.png) 16px no-repeat;
 				color: #fff;
-				text-align: center;
-				padding: 5px 32px 5px 30px;
-				border-radius: 10px;
+				text-align: right;
+				border-radius: 16px;	
 			}
 		}
 
 		.cart {
-			display: inline;
+			float: left;
+			margin-left: 10px;
+
 			a {
-				background: #a1b5aa url("../img/cart-icon.png") no-repeat left;
+				padding-top: 7px;
+				padding-bottom: 7px;
+				padding-left: 45px;
+				padding-right: 33px;
+				background: #a1b5aa url(../img/cart-icon.png) 16px no-repeat;
 				color: #fff;
 				text-align: right;
+				border-radius: 16px;
 			}
 		}
 	}
 
-	.contact .number {
-		margin-right: 21px;
-	}
-
 	.contact {
 		float: right;
+		margin-top: 25px;
 		
 		.time {
 			float: right;
 			margin-top: 0px;
-			margin-right: 22px;
+			margin-right: 6px;
+			margin-left: 16px;
+			
 			span {
 				font-size: 14px;
 				line-height: 16px;
@@ -106,7 +128,7 @@ header {
 		.number {
 			span {
 				font-size: 22px;
-				line-height: 24px;
+				line-height: 32px;
 				font-weight: bold;
 				color: #fff;
 			}
@@ -116,7 +138,7 @@ header {
 
 main {
 	.banner {
-		margin-top: 530px;
+		margin-top: 528px;
 
 		.banner-left, .banner-right {
 			width: 560px;
