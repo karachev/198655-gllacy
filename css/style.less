@@ -13,7 +13,7 @@ body {
 
 header {
 	margin: 8px 21px;
-	margin-bottom: 0px;
+	margin-bottom: 0;
 
 	.header-logo {
 		float: left;
@@ -98,11 +98,24 @@ header {
 				padding-top: 7px;
 				padding-bottom: 7px;
 				padding-left: 45px;
+				text-align: right;
+				border-radius: 16px;
+			}
+		}
+
+		.cart-index {
+			a {
 				padding-right: 33px;
 				background: #a1b5aa url(../img/cart-icon.png) 16px no-repeat;
 				color: #fff;
-				text-align: right;
-				border-radius: 16px;
+			}
+		}
+
+		.cart-catalog {
+			a {
+				padding-right: 14px;
+				background: #fff url(../img/cart-full-icon.png) 16px no-repeat;
+				color: #000;
 			}
 		}
 	}
@@ -657,11 +670,19 @@ input:-ms-input-placeholder {
 
 /*catalog.html*/
 header {
+	.user-block {
+		.cart-1 {
+			a {
+			}
+		}
+	}
+
 	.breadcrumbs {
 		clear: both;
 		float: left;
 		margin-top: 24px;
 		margin-left: 6px;
+		margin-bottom: 0px;
 
 		ul {
 			padding: 0px;
@@ -669,7 +690,8 @@ header {
 
 			li {
 				display: inline;
-				margin-right: 17px;
+				margin-right: 2px;
+				
 				a {
 					font-size: 14px;
 					line-height: 16px;
@@ -680,6 +702,16 @@ header {
 				}
 			}
 
+			li::after {
+				content: "»";
+				color: #fff;
+				margin-left: 3px;
+			}
+
+			li:last-child::after {
+				content: "";
+			}
+
 			li:last-child {
 				a {
 					border-bottom: 0px solid #aebeb5;
@@ -687,19 +719,30 @@ header {
 			}
 		}
 	}
+
+	.contact-catalog {
+		margin-top: -2px;
+	}
 }
 
 main {
 	.filter {
-		margin-top: -25px;
+		clear: both;
 		margin-bottom: 10px;
+		margin-top: -23px;
+
 
 		h1 {
 			margin-bottom: 0px;
 			font-size: 35px;
-			line-height: 41px;
 			font-weight: bold;
 			color: #fff;
+			text-align: left;
+			line-height: 12px;
+		}
+
+		form {
+			margin-top: 12px;
 		}
 
 		h3 {
@@ -776,6 +819,8 @@ main {
 		}
 	}
 }
+
+
 
 /*
 Сделать горячую команду для написания хар-к текста*/  
