@@ -219,10 +219,9 @@ main {
 					color: #fff;
 				}
 
-				img { /*Подумать!!111*/
+				img {
 					vertical-align: top;
 					margin-top: 6px;
-
 				}
 
 				.weight {
@@ -253,7 +252,7 @@ main {
 
 	.about-us {
 		background: url("../img/seo-pattern.png") no-repeat;
-		margin-top: 37px;
+		margin-top: 31px;
 		padding-bottom: 25px;
 
 		h3 {
@@ -386,9 +385,9 @@ main {
 
 		p {
 			width: 518px;
-			margin-top: 34px;
-			margin-left: 26px;
-			margin-bottom: 0px;
+			margin-top: 15px;
+			margin-left: 21px;
+			margin-bottom: 19px;
 			font-size: 16px;
 			line-height: 22px;
 			font-weight: 400;
@@ -396,32 +395,45 @@ main {
 		}
 
 		.button-send {
-			margin-top: 33px;
+			margin-top: 14px;
+			margin-bottom: 17px;
+			margin-left: 4px;
+			padding-right: 14px;
 		}
 	}
 
 	.map {
 		clear: both;
+		position: relative;
 
 		width: 1200px;
+		height: 430px;
 		margin-left: -27px;
-		padding-bottom: 147px;
 		background: url("../img/map-bg.jpg");
 		margin-top: 40px;
 
 
 		.map-adress {
+			position: absolute;
+			top: 63px;
+			left: 872px;
 			width: 250px;
-			margin-left: 871px;
+			padding-right: 51px;
 			background: #fdfefe;
+			border-radius: 13px;
 
 			p {
-				padding-top: 28px;
+				padding-top: 13px;
 				padding-left: 25px;
 				font-size: 14px;
 				line-height: 20px;
 				font-weight: 400;
 				color: #323232;
+
+				.map-phone {
+					padding-top: 9px;
+					padding-bottom: 12px;
+				}
 
 				b {
 					font-size: 18px;
@@ -430,13 +442,24 @@ main {
 					color: #323232;
 				}
 			}
+
+			.btn-feedback {
+				margin-top: 9px;
+				margin-left: 26px;
+				padding-right: 6px;
+				margin-bottom: 29px;
+			}
+		}
+
+		.icecream-icon {
+			position: absolute;
+			top: 138px;
+			left: 265px;
 		}
 	}
 }
 
 footer {
-	margin-top: 133px;
-
 	.footer-social {
 		float: left;
 		margin-top: 36px;
@@ -474,13 +497,13 @@ footer {
 
 	.menu {
 		float: left;
-		margin-top: 17px;
-		margin-left: 189px;
+		margin-top: 16px;
+		margin-left: 186px;
 
 		a {
 			font-size: 13px;
 			line-height: 18px;
-			font-weight: bold;
+			font-weight: 400;
 			color: #fff;
 			text-decoration: none;
 			border-bottom: 1px solid #9eb3a8;
@@ -495,6 +518,9 @@ footer {
 
 			li:first-child {
 				list-style-image: url("../img/love-icon.png");
+				a {
+					font-weight: bold;						
+				}
 			}
 		}
 
@@ -511,6 +537,7 @@ footer {
 		margin-right: 26px;
 
 		p {
+			width: 190px;
 			margin-top: 0px;
 			font-size: 12px;
 			line-height: 18px;
@@ -536,18 +563,16 @@ footer {
 }
 
 .btn {
-  display: inline-block;
-  padding: 11px 19px;
-
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 24px;
-  vertical-align: top;
-  color: #ffffff;
-  text-decoration: none;
-  border-radius: 100px;
   background: linear-gradient(to bottom,#f26843 0,#e74a35 100%);
-  box-shadow: 0 2px 2px rgba(172,16,0,.64);
+  border-radius: 100px;
+  text-decoration: none;
+  color: #fff;
+  vertical-align: top;
+  line-height: 24px;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 11px 19px;
+  display: inline-block;
 }
 
 .btn:hover {
@@ -555,6 +580,10 @@ footer {
   background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
   background:         linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
   box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+
+a.btn.btn-feedback {
 }
 
 .btn:active {
@@ -565,8 +594,8 @@ footer {
 } 
 
 input[placeholder] {
-	margin-top: 37px;
-	margin-left: 26px;
+	margin-top: 17px;
+	margin-left: 21px;
 	padding-top: 8px;
 	padding-left: 21px;
 	padding-bottom: 8px;
@@ -577,6 +606,7 @@ input[placeholder] {
 	color: #999999;
 	border: 1px solid #d3d3d2;
 	border-radius: 3px;
+	padding: 9px 156px 9px 13px;
 
 }
 
@@ -624,7 +654,6 @@ input:-ms-input-placeholder {
 	border: 1px solid #d3d3d2;
 	border-radius: 3px;
 }  
-
 
 /*catalog.html*/
 header {
@@ -742,14 +771,11 @@ main {
 					font-weight: 500;
 					color: #fff;
 					text-decoration: none;
-
 				}
 			}
 		}
 	}
 }
 
-
 /*
 Сделать горячую команду для написания хар-к текста*/  
-
