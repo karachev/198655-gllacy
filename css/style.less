@@ -474,6 +474,8 @@ main {
 }
 
 footer {
+	clear: both;
+
 	.footer-social {
 		float: left;
 		margin-top: 36px;
@@ -835,13 +837,13 @@ main {
 	.page {
 		clear: both;
 		float: right;
-		margin-top: 65px;
-		margin-right: 22px;
+		margin-top: 63px;
+		margin-right: 0px;
 
 		ul {
 			li {
 				display: inline;
-				margin-right: 15px;
+				margin-right: 17px;
 				a {
 					font-size: 16px;
 					line-height: 18px;
@@ -850,10 +852,23 @@ main {
 					text-decoration: none;
 				}
 			}
+			
+			li:nth-child(2) {
+				margin-right: 5px;
+				a {
+					padding: 3px 10px;
+					background-color: #fff;
+					border-radius: 50%;
+					color: #323232;
+				}
+			}
+
+			li:last-child {
+				margin-right: 0px;
+			}
 		}
 	}
 }
-
 
 /*
 Сделать горячую команду для написания хар-к текста*/  
