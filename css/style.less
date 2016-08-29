@@ -11,6 +11,17 @@ body {
 	margin: 0 auto;
 }
 
+.main-menu > li>:hover {
+	padding-top: 7px;
+	padding-bottom: 7px;
+	padding-left: 15px;
+	padding-right: 16px;
+	background: #f8f7f4;
+	text-align: right;
+	border-radius: 16px;
+	color: red;
+}
+
 header {
 	margin: 8px 21px;
 	margin-bottom: 0;
@@ -26,23 +37,49 @@ header {
 		float: left;
 		width: 560px;
 
-		ul {
+		.main-menu {
 			margin: 21px 29px;
 			padding: 0px;
+			position: relative;
 
 			li {
-				display: inline;
-				margin-right: 24px; 
+				margin-right: 24px;
+				display: inline; 
 
 				a {
 					font-size: 16px;
 					line-height: 18px;
 					font-weight: bold;
-					color: #fff;
 					text-decoration: none;
 					border-bottom: 1px solid #9eb3a8;
+					color: #fff;
 				}
 			}
+
+			li {
+				.navi-catalog {
+					border-bottom: none;
+				}
+			}
+		}
+
+		.sub-menu {
+			position: absolute;
+			left: 100px;
+			top: 100px;
+
+			li {
+				display: block;
+				background: #f8f7f4;
+
+				a {
+					font-size: 14px;
+					line-height: 16px;
+					font-weight: bold;
+					color: #323232;
+				}
+			}
+
 		}
 	}
 
@@ -66,11 +103,17 @@ header {
 				display: block;
 				float: left;
 				padding: 8px 16px;
-				margin-top: -8px;		
-				background: #a1b5aa url("../img/search-icon.png") no-repeat center;
+				margin-top: -8px;
     		background-color: rgba(255,255,255,.2);
     		border-radius: 50%;	
     		font-size: 0px;
+			}
+
+			a:before {
+				background: url(../img/search-icon.png) center no-repeat #a1b5aa;
+			}
+
+			a:hover {
 			}
 		}
 
@@ -204,6 +247,7 @@ main {
 	}
 
 	.popular {
+		position: relative;
 		.popular-item {
 			float: left;
 			position: relative; 
@@ -253,15 +297,36 @@ main {
 				font-weight: normal;
 				color: #fff;
 				text-align: center;
-				text-decoration-color: #9db1a5;  /*НЕ РАБОТАЕТ*/
-				text-decoration: underline;
+			}
 
+			a {
+				color: #fff;
+				text-decoration: none;
+				border-bottom: 1px solid #9db1a5;
+			}
+
+			a:hover {
+				color: #ffbc9e;
+				border-bottom: 1px solid #a7a294;
+			}
+
+			a:active {
+				color: #ffbc9e;
+				border-bottom: 1px solid #a7a294;
 			}
 		}
 
 		.popular-item:last-child {
 			margin-right: 0px;
 		}
+
+		/*.popular-item:hover {
+			position: absolute;
+			z-index: 1;
+			background: red;
+			padding-top: 10px;
+			margin-top: 29px;
+		}*/
 	}
 
 	.about-us {
@@ -525,6 +590,16 @@ footer {
 			border-bottom: 1px solid #9eb3a8;
 		}
 
+		a:hover {
+			color: #ffbc9e;
+			border-bottom: 1px solid #a7a294;
+		}
+
+		a:active {
+			color: #ffbc9e;
+			border-bottom: 1px solid #a7a294;
+		}
+
 		li {
 				list-style-type: none;
 			}
@@ -567,6 +642,16 @@ footer {
 				color: #fefefe;
 				text-decoration: none;
 				border-bottom: 1px solid #9eb3a8;
+			}
+
+			a:hover {
+				color: #ffbc9e;
+				border-bottom: 1px solid #a7a294;
+			}
+
+			a:active {
+				color: #ffbc9e;
+				border-bottom: 1px solid #a7a294;
 			}
 		}
 	}
@@ -875,6 +960,8 @@ main {
 		border-bottom: 1px solid #a9bbb1;
 	}
 }
+
+
 
 /*
 Сделать горячую команду для написания хар-к текста*/  
